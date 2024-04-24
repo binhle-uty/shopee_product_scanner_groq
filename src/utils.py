@@ -1,6 +1,6 @@
 import re
 
-def convert_google_sheet_url(url: str = None):
+def convert_google_sheet_url(url: str = None) -> str:
     """Function to convert the url to get dataframe from pandas
     """
     # Regular expression to match and capture the necessary part of the URL
@@ -15,6 +15,7 @@ def convert_google_sheet_url(url: str = None):
 
 
 def convert_money_to_number(money:str) -> float:
+    "Function to convert money to number"
     result = 0
     if money:
         [num, dec] = money.rsplit(',')
